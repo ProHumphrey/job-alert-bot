@@ -61,8 +61,11 @@
   "CPP Investments::JR00744",
   "CPP Investments::JR00750",
   "CPP Investments::JR00752",
+  "CPP Investments::JR00754",
   "CPP Investments::JR00755",
   "CPP Investments::JR00758",
+  "CPP Investments::JR00760",
+  "Manulife::JR26031527",
   "Manulife::JR26040038",
   "Manulife::JR26040693",
   "Manulife::JR26040873",
@@ -261,5 +264,6 @@
   "TD::R_1505192",
   "TD::R_1505384",
   "TD::R_1505404",
-  "TD::R_1505567"
+  "TD::R_1505567",
+  "TD::R_1505684"
 ]
