@@ -51,6 +51,7 @@ ROLE_KEYWORDS = ["intern", "co-op", "coop"]  # must be an internship-type postin
 # it gets flagged (not silently dropped) as possibly undergrad-only, since this
 # is only a heuristic — you asked to exclude undergrad-only postings.
 UNDERGRAD_ONLY_HINTS = ["undergraduate students only", "currently enrolled in an undergraduate"]
+EXCLUDE_KEYWORDS = ["first nations", "inuit", "métis", "metis", "indigenous"]
 GRAD_FRIENDLY_HINTS = ["graduate", "master's", "masters", "mba", "phd"]
 
 # ntfy.sh topic — pick a hard-to-guess name, it's not password protected.

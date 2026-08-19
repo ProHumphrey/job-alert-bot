@@ -17,7 +17,10 @@ def matches(job: dict) -> tuple[bool, str]:
     undergrad-only restriction) that still gets sent but flagged.
     """
     blob = _text_blob(job)
-
+    is_excluded = any(k in blob for k in config.EXCLUDE_KEYWORDS)
+    if is_excluded:
+        return False, ""
+    
     is_role = any(k in blob for k in config.ROLE_KEYWORDS)
     if not is_role:
         return False, ""
