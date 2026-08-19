@@ -59,6 +59,6 @@ GRAD_FRIENDLY_HINTS = ["graduate", "master's", "masters", "mba", "phd"]
 
 # ntfy.sh topic — pick a hard-to-guess name, it's not password protected.
 # e.g. "toronto-quant-intern-alerts-8x2f1"
-NTFY_TOPIC = "REPLACE_ME_WITH_YOUR_OWN_UNIQUE_TOPIC"
+NTFY_TOPIC = "toronto-quant-alerts-f83jd2"
 
 STATE_FILE = "seen_jobs.json"
