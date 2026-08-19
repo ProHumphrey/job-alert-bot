@@ -21,6 +21,9 @@ WORKDAY_EMPLOYERS = [
     {"name": "Ontario Teachers' Pension Plan (OTPP)", "tenant": "otppb", "wd_server": "wd3", "site": "OntarioTeachers_Careers"},
     {"name": "TD",               "tenant": "td",        "wd_server": "wd3",  "site": "TD_Bank_Careers"},
     {"name": "RBC", "tenant": "rbc", "wd_server": "wd3", "site": "RBCEARLYTALENT1"},
+    {"name": "BMO", "tenant": "bmo", "wd_server": "wd3", "site": "campus"},
+    {"name": "HOOPP", "tenant": "hoopp", "wd_server": "wd10", "site": "HOOPPStudent"},
+    {"name": "CPP Investments", "tenant": "cppib", "wd_server": "wd10", "site": "cppinvestments"},
 ]
 
 
@@ -31,12 +34,9 @@ WORKDAY_EMPLOYERS = [
 # those you'll want to add a dedicated client later (same pattern as
 # workday_client.py / ashby_client.py). Treat these as "best effort."
 GENERIC_EMPLOYERS = [
-    {"name": "BMO Campus", "url": "https://jobs.bmo.com/ca/en/campus"},
     {"name": "Scotiabank", "url": "https://jobs.scotiabank.com/go/Student-&-New-Grad-Jobs/2298417/"},
-    {"name": "CPP Investments", "url": "https://www.cppinvestments.com/careers/campus-candidates"},
     {"name": "OPTrust",    "url": "https://www.optrust.com/AboutOPTrust/Career-Opportunities.asp"},
     {"name": "IMCO",       "url": "https://www.imcoinvest.com/careers/opportunities/"},
-    {"name": "HOOPP",      "url": "https://hoopp.com/about-hoopp/hoopp-careers/students-and-new-graduates"},
     {"name": "Picton Mahoney", "url": "https://pictonmahoney.bamboohr.com/careers/"},
     {"name": "Purpose Investments", "url": "https://www.purpose-unlimited.com/careers#positions"},
     {"name": "Amazon Toronto", "url": "https://www.amazon.jobs/en/locations/toronto-canada"},
