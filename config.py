@@ -41,6 +41,9 @@ GENERIC_EMPLOYERS = [
     {"name": "Purpose Investments", "url": "https://www.purpose-unlimited.com/careers#positions"},
     {"name": "Amazon Toronto", "url": "https://www.amazon.jobs/en/locations/toronto-canada"},
     {"name": "Alpaca", "url": "https://alpaca.markets/hiring"},
+    {"name": "Cortland Credit", "url": "https://www.cortlandcredit.ca/careers"},
+    {"name": "OMERS", "url": "https://careers.omers.com/ca/en/c/students-interns-jobs"},
+    {"name": "PwC", "url": "https://jobs-ca.pwc.com/campus/ca/en/search-results"},
 ]
 
 # ---- Match rules -----------------------------------------------------
