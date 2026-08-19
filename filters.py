@@ -1,3 +1,4 @@
+import re
 import config
 
 
@@ -21,7 +22,7 @@ def matches(job: dict) -> tuple[bool, str]:
     if is_excluded:
         return False, ""
     
-    is_role = any(k in blob for k in config.ROLE_KEYWORDS)
+    is_role  =  bool(re.search(r'\b(intern|interns|internship|co-op|coop)\b', blob))
     if not is_role:
         return False, ""
 
