@@ -22,11 +22,6 @@ WORKDAY_EMPLOYERS = [
     {"name": "TD",               "tenant": "td",        "wd_server": "wd3",  "site": "TD_Bank_Careers"},
 ]
 
-# ---- Ashby-powered employers -----------------------------------------
-# org name comes from https://jobs.ashbyhq.com/{org}
-ASHBY_EMPLOYERS = [
-    {"name": "Alpaca", "org": "Alpaca"},
-]
 
 # ---- Everything else: best-effort keyword scan over the page HTML --------
 # These sites use custom/JS-heavy career portals (Amazon, RBC, BMO, Scotia,
@@ -45,6 +40,7 @@ GENERIC_EMPLOYERS = [
     {"name": "Picton Mahoney", "url": "https://pictonmahoney.bamboohr.com/careers/"},
     {"name": "Purpose Investments", "url": "https://www.purpose-unlimited.com/careers#positions"},
     {"name": "Amazon Toronto", "url": "https://www.amazon.jobs/en/locations/toronto-canada"},
+    {"name": "Alpaca", "url": "https://alpaca.markets/hiring"},
 ]
 
 # ---- Match rules -----------------------------------------------------

@@ -12,7 +12,6 @@ import sys
 
 import config
 import workday_client
-import ashby_client
 import generic_client
 import filters
 import notify
@@ -42,16 +41,6 @@ def collect_all_jobs():
             print(f"[ok] {emp['name']}: {len(jobs)} postings fetched")
         except Exception as e:
             print(f"[error] {emp['name']} (Workday): {e}", file=sys.stderr)
-
-    for emp in config.ASHBY_EMPLOYERS:
-        try:
-            jobs = ashby_client.fetch_jobs(emp["org"])
-            for j in jobs:
-                j["employer"] = emp["name"]
-            all_jobs.extend(jobs)
-            print(f"[ok] {emp['name']}: {len(jobs)} postings fetched")
-        except Exception as e:
-            print(f"[error] {emp['name']} (Ashby): {e}", file=sys.stderr)
 
     for emp in config.GENERIC_EMPLOYERS:
         try:
