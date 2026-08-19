@@ -20,6 +20,7 @@ WORKDAY_EMPLOYERS = [
     {"name": "Neuberger Berman", "tenant": "nb",        "wd_server": "wd1",  "site": "nbcareers"},
     {"name": "Ontario Teachers' Pension Plan (OTPP)", "tenant": "otppb", "wd_server": "wd3", "site": "OntarioTeachers_Careers"},
     {"name": "TD",               "tenant": "td",        "wd_server": "wd3",  "site": "TD_Bank_Careers"},
+    {"name": "RBC", "tenant": "rbc", "wd_server": "wd3", "site": "RBCEARLYTALENT1"},
 ]
 
 
@@ -30,7 +31,6 @@ WORKDAY_EMPLOYERS = [
 # those you'll want to add a dedicated client later (same pattern as
 # workday_client.py / ashby_client.py). Treat these as "best effort."
 GENERIC_EMPLOYERS = [
-    {"name": "RBC",        "url": "https://jobs.rbc.com/ca/en/featuredopportunities/student-early-talent-jobs"},
     {"name": "BMO Campus", "url": "https://jobs.bmo.com/ca/en/campus"},
     {"name": "Scotiabank", "url": "https://jobs.scotiabank.com/go/Student-&-New-Grad-Jobs/2298417/"},
     {"name": "CPP Investments", "url": "https://www.cppinvestments.com/careers/campus-candidates"},
