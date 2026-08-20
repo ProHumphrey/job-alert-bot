@@ -27,6 +27,9 @@ WORKDAY_EMPLOYERS = [
     {"name": "OPTrust", "tenant": "optrust", "wd_server": "wd3", "site": "OPTrust"},
     {"name": "IMCO", "tenant": "imcoinvest", "wd_server": "wd3", "site": "IMCO"},
     {"name": "OMERS", "tenant": "omers", "wd_server": "wd3", "site": "OMERS_External"},
+    {"name": "Sustainalytics", "tenant": "morningstar", "wd_server": "wd5", "site": "Sustainalytics"},
+    {"name": "Fiera Capital", "tenant": "fieracapital", "wd_server": "wd3", "site": "Career"},
+    {"name": "Murex", "tenant": "murex", "wd_server": "wd3", "site": "MurexCareerPage1"},
 ]
 
 
@@ -44,6 +47,14 @@ GENERIC_EMPLOYERS = [
     {"name": "Alpaca", "url": "https://alpaca.markets/hiring"},
     {"name": "Cortland Credit", "url": "https://www.cortlandcredit.ca/careers"},
     {"name": "PwC", "url": "https://jobs-ca.pwc.com/campus/ca/en/search-results"},
+    {"name": "Citco", "url": "https://fa-euxc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs?mode=location"},
+    {"name": "Deloitte", "url": "https://careers.deloitte.ca/go/Studentnew-graduate-opportunities/984400/"},
+    {"name": "KPMG", "url": "https://careers.kpmg.ca/students/jobs?limit=25&page=1&tags1=Intern%2FCo-op&locations=Toronto,Ontario,Canada"}, 
+    {"name": "MNP", "url": "https://recruiting.ultipro.ca/MNP5000MNPL/JobBoard/d1e870eb-9c8c-4ce5-88ee-9f042cf2a12f/?q=&o=postedDateDesc"},
+    {"name": "Stripe", "url": "https://stripe.com/careers/search"},
+    {"name": "University Pension Plan", "url": "https://jobs.dayforcehcm.com/upp/ExternalCANDIDATEPORTAL"},
+
+
 ]
 
 # ---- Match rules -----------------------------------------------------
