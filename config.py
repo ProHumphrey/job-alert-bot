@@ -24,6 +24,9 @@ WORKDAY_EMPLOYERS = [
     {"name": "BMO", "tenant": "bmo", "wd_server": "wd3", "site": "campus"},
     {"name": "HOOPP", "tenant": "hoopp", "wd_server": "wd10", "site": "HOOPPStudent"},
     {"name": "CPP Investments", "tenant": "cppib", "wd_server": "wd10", "site": "cppinvestments"},
+    {"name": "OPTrust", "tenant": "optrust", "wd_server": "wd3", "site": "OPTrust"},
+    {"name": "IMCO", "tenant": "imcoinvest", "wd_server": "wd3", "site": "IMCO"},
+    {"name": "OMERS", "tenant": "omers", "wd_server": "wd3", "site": "OMERS_External"},
 ]
 
 
@@ -35,14 +38,11 @@ WORKDAY_EMPLOYERS = [
 # workday_client.py / ashby_client.py). Treat these as "best effort."
 GENERIC_EMPLOYERS = [
     {"name": "Scotiabank", "url": "https://jobs.scotiabank.com/go/Student-&-New-Grad-Jobs/2298417/"},
-    {"name": "OPTrust",    "url": "https://www.optrust.com/AboutOPTrust/Career-Opportunities.asp"},
-    {"name": "IMCO",       "url": "https://www.imcoinvest.com/careers/opportunities/"},
     {"name": "Picton Mahoney", "url": "https://pictonmahoney.bamboohr.com/careers/"},
     {"name": "Purpose Investments", "url": "https://www.purpose-unlimited.com/careers#positions"},
     {"name": "Amazon Toronto", "url": "https://www.amazon.jobs/en/locations/toronto-canada"},
     {"name": "Alpaca", "url": "https://alpaca.markets/hiring"},
     {"name": "Cortland Credit", "url": "https://www.cortlandcredit.ca/careers"},
-    {"name": "OMERS", "url": "https://careers.omers.com/ca/en/c/students-interns-jobs"},
     {"name": "PwC", "url": "https://jobs-ca.pwc.com/campus/ca/en/search-results"},
 ]
 
