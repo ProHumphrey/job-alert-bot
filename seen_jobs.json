@@ -6,6 +6,7 @@
   "BMO::R260017813",
   "BMO::R260018951",
   "BMO::R260021135",
+  "BMO::R260021186",
   "BMO::R260021622",
   "BMO::R260021629",
   "BMO::R260021763",
@@ -26,6 +27,7 @@
   "CIBC::2616834",
   "CIBC::2617247",
   "CIBC::2617371",
+  "CIBC::2617484",
   "CPP Investments::JR00095",
   "CPP Investments::JR00352",
   "CPP Investments::JR00388",
@@ -72,7 +74,9 @@
   "CPP Investments::JR00760",
   "CPP Investments::JR00765",
   "CPP Investments::JR00767",
+  "CPP Investments::JR00769",
   "CPP Investments::JR00770",
+  "CPP Investments::JR00771",
   "Fiera Capital::JR-10813",
   "Fiera Capital::JR-10839",
   "Fiera Capital::JR-10851",
@@ -413,6 +417,7 @@
   "Ontario Teachers' Pension Plan (OTPP)::7195",
   "Ontario Teachers' Pension Plan (OTPP)::7196",
   "Ontario Teachers' Pension Plan (OTPP)::7197",
+  "Ontario Teachers' Pension Plan (OTPP)::7198",
   "Ontario Teachers' Pension Plan (OTPP)::7202",
   "Ontario Teachers' Pension Plan (OTPP)::7204",
   "Ontario Teachers' Pension Plan (OTPP)::7207",
@@ -504,5 +509,6 @@
   "TD::R_1505384",
   "TD::R_1505404",
   "TD::R_1505567",
-  "TD::R_1505684"
+  "TD::R_1505684",
+  "TD::R_1506877"
 ]
