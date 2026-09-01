@@ -257,6 +257,7 @@
   "Manulife::JR26060736",
   "Manulife::JR26060751",
   "Manulife::JR26060763",
+  "Manulife::JR26060909",
   "Manulife::JR26061005",
   "Manulife::JR26061046",
   "Manulife::JR26061117",
@@ -607,6 +608,7 @@
   "Manulife::JR26082027",
   "Manulife::JR26082039",
   "Manulife::JR26082040",
+  "Manulife::JR26090031",
   "Murex::JR100548",
   "Murex::JR100595",
   "Murex::JR102134",
@@ -1017,5 +1019,6 @@
   "TD::R_1506905",
   "TD::R_1507356",
   "TD::R_1508414",
+  "TD::R_1508665",
   "TD::R_1508683"
 ]
