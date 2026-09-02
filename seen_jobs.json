@@ -744,6 +744,7 @@
   "Neuberger Berman::R0011950",
   "Neuberger Berman::R0011980",
   "Neuberger Berman::R0012022",
+  "Neuberger Berman::R0012115",
   "Neuberger Berman::R0012185",
   "Neuberger Berman::R0012232",
   "Neuberger Berman::R0012255",
@@ -1108,5 +1109,6 @@
   "TD::R_1508414",
   "TD::R_1508665",
   "TD::R_1508683",
-  "TD::R_1508748"
+  "TD::R_1508748",
+  "TD::R_1509141"
 ]
