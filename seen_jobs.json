@@ -486,6 +486,7 @@
   "Manulife::JR26070242",
   "Manulife::JR26070244",
   "Manulife::JR26070246",
+  "Manulife::JR26070279",
   "Manulife::JR26070310",
   "Manulife::JR26070330",
   "Manulife::JR26070373",
@@ -521,6 +522,7 @@
   "Manulife::JR26070936",
   "Manulife::JR26070941",
   "Manulife::JR26070966",
+  "Manulife::JR26070996",
   "Manulife::JR26071046",
   "Manulife::JR26071057",
   "Manulife::JR26071071",
@@ -1458,6 +1460,7 @@
   "Scotiabank::5ebd96733ce593ba",
   "Scotiabank::6075c67f07a49794",
   "Scotiabank::65a2c68f8e4aada3",
+  "Scotiabank::6ad650b488c91749",
   "Scotiabank::6f33abe007542c13",
   "Scotiabank::75665d31316a4f0e",
   "Scotiabank::7607a987228769d9",
@@ -1573,5 +1576,6 @@
   "TD::R_1509358",
   "TD::R_1509994",
   "TD::R_1510020",
-  "TD::R_1510023"
+  "TD::R_1510023",
+  "TD::R_1510663"
 ]
