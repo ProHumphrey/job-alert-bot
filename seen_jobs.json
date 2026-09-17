@@ -19,6 +19,7 @@
   "AIMCo::JR100913",
   "AIMCo::JR100914",
   "AIMCo::JR100915",
+  "AIMCo::JR100917",
   "BMO::R260014092",
   "BMO::R260015949",
   "BMO::R260016161",
@@ -838,6 +839,7 @@
   "Manulife::JR26081097",
   "Manulife::JR26081098",
   "Manulife::JR26081103",
+  "Manulife::JR26081107",
   "Manulife::JR26081129",
   "Manulife::JR26081140",
   "Manulife::JR26081141",
@@ -1123,6 +1125,7 @@
   "Manulife::JR26090717",
   "Manulife::JR26090726",
   "Manulife::JR26090780",
+  "Manulife::JR26090851",
   "Manulife::JR26090853",
   "Manulife::JR26090889",
   "Murex::JR100548",
@@ -1269,6 +1272,7 @@
   "Neuberger Berman::R0012599",
   "Neuberger Berman::R0012600",
   "Neuberger Berman::R0012602",
+  "Neuberger Berman::R0012635",
   "Neuberger Berman::R0012647",
   "OMERS::JR-7887",
   "OMERS::JR-7897",
@@ -1785,5 +1789,6 @@
   "TD::R_1510020",
   "TD::R_1510023",
   "TD::R_1510663",
-  "TD::R_1511254"
+  "TD::R_1511254",
+  "TD::R_1511579"
 ]
