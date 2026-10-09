@@ -947,6 +947,7 @@
   "Manulife::JR26080512",
   "Manulife::JR26080513",
   "Manulife::JR26080515",
+  "Manulife::JR26080516",
   "Manulife::JR26080517",
   "Manulife::JR26080520",
   "Manulife::JR26080529",
@@ -1011,6 +1012,7 @@
   "Manulife::JR26080856",
   "Manulife::JR26080860",
   "Manulife::JR26080874",
+  "Manulife::JR26080875",
   "Manulife::JR26080877",
   "Manulife::JR26080885",
   "Manulife::JR26080897",
@@ -1056,6 +1058,7 @@
   "Manulife::JR26081129",
   "Manulife::JR26081140",
   "Manulife::JR26081141",
+  "Manulife::JR26081175",
   "Manulife::JR26081177",
   "Manulife::JR26081178",
   "Manulife::JR26081179",
@@ -1074,6 +1077,7 @@
   "Manulife::JR26081275",
   "Manulife::JR26081279",
   "Manulife::JR26081283",
+  "Manulife::JR26081286",
   "Manulife::JR26081299",
   "Manulife::JR26081314",
   "Manulife::JR26081323",
@@ -1396,6 +1400,7 @@
   "Manulife::JR26090556",
   "Manulife::JR26090557",
   "Manulife::JR26090559",
+  "Manulife::JR26090562",
   "Manulife::JR26090564",
   "Manulife::JR26090565",
   "Manulife::JR26090571",
@@ -2523,5 +2528,6 @@
   "TD::R_1513726",
   "TD::R_1513765",
   "TD::R_1514440",
-  "TD::R_1514811"
+  "TD::R_1514811",
+  "TD::R_1515567"
 ]
