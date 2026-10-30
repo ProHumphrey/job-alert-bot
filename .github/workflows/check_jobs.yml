@@ -17,8 +17,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run job check
-        run: python main.py env: NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python main.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
       - name: Commit updated seen-jobs state
         run: |
           git config user.name "job-alert-bot"
