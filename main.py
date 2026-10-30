@@ -34,7 +34,15 @@ def collect_all_jobs():
 
     for emp in config.WORKDAY_EMPLOYERS:
         try:
-            jobs = workday_client.fetch_jobs(emp["tenant"], emp["wd_server"], emp["site"])
+            jobs = []
+            seen_ids = set()
+            for term in config.SEARCH_TERMS:
+                for j in workday_client.fetch_jobs(
+                    emp["tenant"], emp["wd_server"], emp["site"], search_text=term
+                ):
+                    if j["id"] not in seen_ids:
+                        seen_ids.add(j["id"])
+                        jobs.append(j)
             for j in jobs:
                 j["employer"] = emp["name"]
             all_jobs.extend(jobs)

@@ -1,3 +1,4 @@
+import os 
 """
 Config: employers to watch + what counts as a match.
 
@@ -15,14 +16,14 @@ main.py which client function to use to fetch its jobs:
 #   https://{tenant}.{wd_server}.myworkdayjobs.com/{site}
 WORKDAY_EMPLOYERS = [
     {"name": "AIMCo",            "tenant": "aimco",    "wd_server": "wd10", "site": "AIMCoCareers"},
-    {"name": "CIBC",             "tenant": "cibc",     "wd_server": "wd3",  "site": "campus"},
+    {"name": "CIBC",  "tenant": "cibc",  "wd_server": "wd3",  "site": "search"},
     {"name": "Manulife",         "tenant": "manulife",  "wd_server": "wd3",  "site": "MFCJH_Jobs"},
     {"name": "Neuberger Berman", "tenant": "nb",        "wd_server": "wd1",  "site": "nbcareers"},
     {"name": "Ontario Teachers' Pension Plan (OTPP)", "tenant": "otppb", "wd_server": "wd3", "site": "OntarioTeachers_Careers"},
     {"name": "TD",               "tenant": "td",        "wd_server": "wd3",  "site": "TD_Bank_Careers"},
-    {"name": "RBC", "tenant": "rbc", "wd_server": "wd3", "site": "RBCEARLYTALENT1"},
-    {"name": "BMO", "tenant": "bmo", "wd_server": "wd3", "site": "campus"},
-    {"name": "HOOPP", "tenant": "hoopp", "wd_server": "wd10", "site": "HOOPPStudent"},
+    {"name": "RBC",   "tenant": "rbc",   "wd_server": "wd3",  "site": "RBCGLOBAL1"},
+    {"name": "BMO",   "tenant": "bmo",   "wd_server": "wd3",  "site": "External"},
+    {"name": "HOOPP", "tenant": "hoopp", "wd_server": "wd10", "site": "HOOPP"},
     {"name": "CPP Investments", "tenant": "cppib", "wd_server": "wd10", "site": "cppinvestments"},
     {"name": "OPTrust", "tenant": "optrust", "wd_server": "wd3", "site": "OPTrust"},
     {"name": "IMCO", "tenant": "imcoinvest", "wd_server": "wd3", "site": "IMCO"},
@@ -53,23 +54,28 @@ GENERIC_EMPLOYERS = [
     {"name": "MNP", "url": "https://recruiting.ultipro.ca/MNP5000MNPL/JobBoard/d1e870eb-9c8c-4ce5-88ee-9f042cf2a12f/?q=&o=postedDateDesc"},
     {"name": "Stripe", "url": "https://stripe.com/careers/search"},
     {"name": "University Pension Plan", "url": "https://jobs.dayforcehcm.com/upp/ExternalCANDIDATEPORTAL"},
-
-
 ]
 
 # ---- Match rules -----------------------------------------------------
 LOCATION_KEYWORDS = ["toronto", "ontario", "on, canada"]
-TERM_KEYWORDS = ["winter 2027", "jan-apr 2027", "january 2027"]  # any one match = pass
-ROLE_KEYWORDS = ["intern", "co-op", "coop"]  # must be an internship-type posting
-# If a posting's text contains one of these AND does NOT also mention grad/masters,
-# it gets flagged (not silently dropped) as possibly undergrad-only, since this
-# is only a heuristic — you asked to exclude undergrad-only postings.
-UNDERGRAD_ONLY_HINTS = ["undergraduate students only", "currently enrolled in an undergraduate"]
 EXCLUDE_KEYWORDS = ["first nations", "inuit", "métis", "metis", "indigenous"]
-GRAD_FRIENDLY_HINTS = ["graduate", "master's", "masters", "mba", "phd"]
 
-# ntfy.sh topic — pick a hard-to-guess name, it's not password protected.
-# e.g. "toronto-quant-intern-alerts-8x2f1"
-NTFY_TOPIC = "toronto-quant-alerts-f83jd2"
+# Job title must match at least one of these
+ROLE_PATTERNS = [
+    r"\bquant\b", r"\bquantitative\b", r"\bsystematic\b",
+    r"\balgorithmic\b", r"\btrader\b", r"\btrading\b",
+]
 
+# Skip a posting if its title matches any of these (interns, students, senior roles)
+EXCLUDE_TITLE_PATTERNS = [
+    r"\bintern(s|ship)?\b", r"\bco-?op\b", r"\bstudent\b",
+    r"\bsenior\b", r"\bsr\b", r"\bdirector\b", r"\bvice president\b",
+    r"\bvp\b", r"\bsvp\b", r"\bavp\b", r"\bhead of\b", r"\bprincipal\b",
+    r"\bmanager\b", r"\blead\b", r"\bchief\b", r"\bpartner\b",
+]
+
+# Keyword searches run against each Workday board
+SEARCH_TERMS = ["quantitative", "quant", "trading", "trader", "systematic"]
+
+NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "")
 STATE_FILE = "seen_jobs.json"

@@ -14,6 +14,10 @@ import config
 
 
 def send(title: str, body: str, url: str = None):
+    if not config.NTFY_TOPIC: 
+        print("[notify] NTFY_TOPIC not set, skipping push") 
+    return
+
     headers = {
         "Title": title.encode("utf-8"),
         "Priority": "high",
